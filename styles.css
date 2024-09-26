@@ -1,0 +1,134 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+    --font: figtree
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 14px;
+}
+
+main {
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: var(--White);
+    box-shadow: 7px 7px black;
+}
+
+aside,
+article {
+    width: 100%;
+}
+
+aside>img {
+    width: 100%;
+    border-radius: 8px;
+    margin: auto;
+}
+
+main article div:first-child {
+    width: 100px;
+    height: 30px;
+    background-color: var(--Yellow);
+    padding: 5px;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.publish {
+    color: var(--Gray-950);
+    margin-top: 15px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+main article h1 {
+    text-align: left;
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main article h1:hover {
+    color: var(--Yellow);
+}
+
+.details {
+    color: var(--Gray-500);
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+main article div:last-child {
+    width: 50%;
+    display: flex;
+    margin-top: 20px;
+}
+
+main article div:last-child>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main article div:last-child>h4 {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+
+@media (min-width: 960px) {
+    main {
+        width: 25%;
+    }
+}
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
